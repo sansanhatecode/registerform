@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:ital,wght@0,100;1,100&display=swap');
+
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+body {
+	font-family: 'Poppins', sans-serif;
+	height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./img/bgr.jpg);
+    background-repeat: no-repeat center fixed;
+    background-size: cover;
+    backdrop-filter: blur(50px);
+    border: 10px solid white;
+}
+
+.container{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    width: 90%;
+}
+
+.input__field{
+    width: 100%;
+    margin: 5px 5px 40px 5px;
+    padding-bottom: 8px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid white;
+    position: relative;
+}
+
+.input__field input{
+    width: 85%;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.input__field input::placeholder{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    padding-left: 10px;
+}
+
+.usericon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.usericon h2{
+    color: aliceblue;
+    font-weight: lighter;
+    letter-spacing: 5px;
+    line-height: 2;
+}
+
+.usericon span{
+    font-size: 80px;
+    color: rgb(12, 12, 95);
+}
+
+.remember-forgot{
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forgot label{
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+    color: white;
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+
+input[type="checkbox"]{
+    margin-right: 5px;
+}
+
+.remember-forgot a{
+    font-size: 13px;
+    font-style: italic;
+    color: white;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover{
+    color: rgb(12, 12, 95);
+}
+
+.remember-forgot a:visited{
+    color: aqua;
+}
+
+input[type='submit']{
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: rgb(12, 12, 95);
+    font-size: 12.5px;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+input[type="text"], input[type="password"] {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 15px;
+}
+
+input[type='submit']:hover {
+	background-color: #2691d9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgb(12, 12, 95);
+}
+
+/* form check */
+.input__field.success {
+	border-bottom: 2px solid #2691d9;
+}
+
+.input__field.error {
+	border-bottom: 2px solid #e74c3c;
+}
+
+small {
+	position: absolute;
+	left: 0;
+	top: 100%;
+	margin-top: 3px;
+	color: #e74c3c;
+}

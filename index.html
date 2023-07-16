@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register form</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/8a3aa853ee.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="usericon">
+            <span><i class="fa-solid fa-circle-user"></i></span>
+            <h2>CUSTOMER LOGIN</h2>
+        </div>
+        <form action="">
+            <div class="input__field">
+                <label for="emailID"><i class="fa-solid fa-envelope"></i></label>
+                <input type="text" id="emailID" placeholder="Email ID">
+                <small></small>
+            </div>
+            <div class="input__field">
+                <label for="password"><i class="fa-solid fa-lock"></i></label>
+                <input type="password" id="password" placeholder="Password">
+                <small></small>
+            </div>       
+            <div class="remember-forgot">
+                <label><input type="checkbox" id="remember">Remember me</label>
+                <a href="#">Forgot password?</a>
+            </div>
+            <input type="submit" value="login" id="loginbtn">
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
